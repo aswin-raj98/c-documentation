@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="style.css">
+    <link type="image/png" rel="icon" href="./c.ico">
+</head>
+<body class="container">
+    <header>
+        <div class="logo">
+            <img src="./c.ico" alt="logo">
+        </div>
+        <h1>C TUTORIAL</h1>
+    </header>
+    <main>
+        <aside class="table">
+            <h2 class="contents">Contents</h2>
+            <ul class="menu">
+                <li class="sub-head"><a href="./index.html">Introduction</a></li> 
+                <ul class="sub-menu">
+                    <li><a href="#">What is C language?</a></li>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">C Basics</a></li>
+                </ul>
+                <li class="sub-head"><a href="./page2.html">Getting Started with C</a></li>
+                <ul class="sub-menu">
+                    <li><a href="#">C Variables and Constants</a></li>
+                    <li><a href="#">C Data Types</a></li>
+                </ul>
+                <li class="sub-head"><a href="./page3.html">Control Statements</a></li>
+                <ul class="sub-menu">
+                    <li><a href="#">C Input/Output</a></li>
+                    <li><a href="#">C Operators</a></li>
+                    <li><a href="#">C Functions</a></li>
+                </ul>
+                <li class="sub-head"><a href="./page4.html">Arrays and Strings</a></li>
+                <ul class="sub-menu">
+                    <li><a href="#">C Array</a></li>
+                    <li><a href="#">C Strings</a></li>
+                </ul>
+                <li class="sub-head"><a href="./page5.html">Memory Management</a></li>
+                <ul class="sub-menu">
+                    <li><a href="#">C Preprocessor</a></li>
+                    <li><a href="#">C File Handling</a></li>
+                </ul>
+            </ul>
+        </aside>
+        <section class="cnt">
+            <h1>Getting started with C</h1><br>
+            <h2>C Variables</h2>
+            <p>A variable in C language is the name associated with some memory location to store data of different types. There are many types of variables in C depending on the scope, storage class, lifetime, type of data they store, etc.</p>
+            <p>A variable is the basic building block of a C program that can be used in expressions as a substitute in place of the value it stores.</p>
+            <h2>What is a variable in C?</h2>
+            <p>A variable in C is a memory location with some name that helps store some form of data and retrieves it when required. We can store different types of data in the variable and reuse the same variable for storing some other data any number of times.</p>
+            <p>They can be viewed as the names given to the memory location so that we can refer to it without having to memorize the memory address. The size of the variable depends upon the data type it stores.</p>
+            <h2>C Variable Syntax</h2>
+            <p>The syntax to declare a variable in C specifies the name and the type of the variable.</p>
+            <ul>
+                <li>data_type: Type of data that a variable can store.</li>
+                <li>variable_name: Name of the variable given by the user.</li>
+                <li>value: value assigned to the variable by the user.</li>
+            </ul><br>
+            <h4>Example</h4>
+            <img src="./example3.jpg" alt="eg"><br><br>
+            <h3>3 Aspects of defining a variable</h3>
+            <ul>
+            <li>Variable Declaration</li>
+            <li>Variable Definition</li>
+            <li>Variable Definition</li>
+        </ul><br>
+        <h3>Variable Declaration</h3>
+        <p>Variable declaration in C tells the compiler about the existence of the variable with the given name and data type.When the variable is declared, an entry in symbol table is created and memory will be allocated at the time of initialization of the variable.</p>
+        <h3>C Variable Definition</h3>
+        <p>In the definition of a C variable, the compiler allocates some memory and some value to it. A defined variable will contain some random garbage value till it is not initialized.</p>
+        <h4>Example</h4>
+        <img src="./example4.jpg" alt="4"><br>
+         <h3>C Variable Initialization</h3>
+         <p>Initialization of a variable is the process where the user assigns some meaningful value to the variable when creating the variable.</p>
+         <h4>Example</h4>
+         <img src="./example5.jpg" alt="5"><br>
+         <h2>How to use variables in C?</h2>
+         <h4>Example</h4>
+         <img src="./code3.jpg" alt="c3"><br><br>
+         <h4>Output</h4>
+         <img src="./output3.jpg" alt="o3"><br><br>
+         <h2>Rules for Naming Variables in C</h2>
+         <ol>
+             <li>A variable name must only contain alphabets, digits, and underscore.</li>
+             <li>A variable name must start with an alphabet or an underscore only. It cannot start with a digit.</li>
+             <li>No white space is allowed within the variable name.</li>
+             <li>A variable name must not be any reserved word or keyword.</li>
+         </ol><br>
+         <h4>Example</h4>
+         <img src="./structure2.jpg" alt="s4"><br>
+         <h2>C Variable Types</h2>
+         <ul>
+             <li>Local Variables</li>
+             <li>Global Variables</li>
+             <li>Static Variables</li>
+             <li>Automatic Variables</li>
+             <li>Extern Variables</li>
+             <li>Register Variables</li>
+         </ul><br>
+         <h2>Local Variables in C</h2>
+         <p>A Local variable in C is a variable that is declared inside a function or a block of code. Its scope is limited to the block or function in which it is declared.</p>
+         <h4>Example</h4>
+         <img src="./code4.jpg" alt="c4"><br>
+         <h4>Output</h4>
+         <img src="./output2.jpg" alt=""><br><br>
+         <p>In the above code, x can be used only in the scope of function(). Using it in the main function will give an error.</p>
+        <h2>Global Variable in C</h2>
+        <p>A Global variable in C is a variable that is declared outside the function or a block of code. Its scope is the whole program i.e. we can access the global variable anywhere in the C program after it is declared.</p>
+        <h4>Example</h4>
+        <img src="./code5.jpg" alt="c5"><br>
+        <h4>Output</h4>
+        <img src="./output4.jpg" alt="o4"><br><br>
+        <p>In the above code, both functions can use the global variable as global variables are accessible by all the functions.</p>
+        <h2>Static Variables in C</h2>
+        <p>A static variable in C is a variable that is defined using the static keyword. It can be defined only once in a C program and its scope depends upon the region where it is declared (can be global or local).</p>
+        <p>The default value of static variables is zero.</p>
+        <h4>Syntax of Static Variable in C</h4>
+        <img src="./syntax1.jpg" alt="sy1"><br><br>
+        <p>As its lifetime is till the end of the program, it can retain its value for multiple function calls as shown in the example.</p>
+        <h4>Example</h4>
+        <img src="./code6.jpg" alt="c6"><br>
+        <h4>Output</h4>
+        <img src="./output5.jpg" alt="o5"><br><br>
+        <p>In the above example, we can see that the local variable will always print the same value whenever the function will be called whereas the static variable will print the incremented value in each function call.</p>
+        <h2>Automatic Variable in C</h2>
+        <p>All the local variables are automatic variables by default. They are also known as auto variables.</p>
+        <p>Their scope is local and their lifetime is till the end of the block. If we need, we can use the auto keyword to define the auto variables.</p>
+        <p>The default value of the auto variables is a garbage value.</p>
+        <h4>Syntax of Auto Variable in C</h4>
+        <img src="./syntax2.jpg" alt="sy2"><br><br>
+        <h4>Example</h4>
+        <img src="./code7.jpg" alt="c7"><br>
+        <h4>Output</h4>
+        <img src="./output7.jpg" alt="o7"><br><br>
+        <p>In the above example, both x and y are automatic variables. The only difference is that variable y is explicitly declared with the auto keyword.</p>
+        <h2>External Variables in C</h2>
+        <p>External variables in C can be shared between multiple C files. We can declare an external variable using the extern keyword.</p>
+        <p>Their scope is global and they exist between multiple C files.</p>
+        <h4>Syntax of Extern Variables in C</h4>
+        <img src="./syntax3.jpg" alt="sy3"><br><br>
+        <h4>Example</h4>
+        <img src="./code8.jpg" alt="c8"><br>
+        <p>In the above example, x is an external variable that is used in multiple C files.</p>
+        <h2>Register Variables in C</h2>
+        <p>Register variables in C are those variables that are stored in the CPU register instead of the conventional storage place like RAM. Their scope is local and exists till the end of the block or a function.</p>
+        <p>These variables are declared using the register keyword.The default value of register variables is a garbage value.</p>
+        <h4>Syntax of Register Variables in C</h4>
+        <img src="./syntax4.jpg" alt="sy4"><br><br>
+        <h4>Example</h4>
+        <img src="./code9.jpg" alt="c9"><br>
+        <h4>Output</h4>
+        <img src="./output8.jpg" alt="o8"><br><br>
+         <h2>Constants in C</h2>
+         <p>The constants in C are the read-only variables whose values cannot be modified once they are declared in the C program. The type of constant can be an integer constant, a floating pointer constant, a string constant, or a character constant. In C language, the const keyword is used to define the constants.</p>
+         <p>In this article, we will discuss about the constants in C programming, ways to define constants in C, types of constants in C, their properties and the difference between literals and constants.</p>
+         <h2>How to Define Constant in C?</h2>
+         <p>We define a constant in C language using the const keyword. Also known as a const type qualifier, the const keyword is placed at the start of the variable declaration to declare that variable as a constant.</p>
+         <h4>Syntax to define constant</h4>
+         <img src="./syntax5.jpg" alt="sy5"><br><br>
+         <img src="./structure3.jpg" alt="s3"><br><br>
+         <h4>Example</h4>
+         <img src="./code10.jpg" alt="c10"><br><br>
+         <h4>Output</h4>
+         <img src="./output9.jpg" alt="o9"><br><br>
+         <h2>Types of Constants in C</h2>
+         <ul>
+             <li>Integer Constant</li>
+             <li>Character Constant</li>
+             <li>Floating Point Constant</li>
+             <li>Double Precision Floating Point Constant</li>
+             <li>Array Constant</li>
+             <li>Structure Constant</li>
+         </ul><br>
+         <h2>Properties of Constants in C</h2>
+         <ul>
+             <li>Initialization with Declaration</li>
+             <p>We can only initialize the constant variable in C at the time of its declaration. Otherwise, it will store the garbage value.</p>
+
+             <li>Immutability</li>
+             <p>The constant variables in c are immutable after its definition, i.e., they can be initialized only once in the whole program. After that, we cannot modify the value stored inside that variable.</p>
+             <h2>Data Types In C</h2>
+             <p>Each variable in C has an associated data type. It specifies the type of data that the variable can store like integer, character, floating, double, etc. Each data type requires different amounts of memory and has some specific operations which can be performed over it.</p>
+            </ul>
+             <h3>Types</h3>
+             <ul>
+                 <li>Integer Data Type</li>
+                 <li>Character Data Type</li>
+                 <li>Float Data Type</li>
+                 <li>Double Data Type</li>
+                 <li>Void Data Type</li>
+             </ul><br>
+             <h3>Integer Data Type</h3>
+             <p>The integer datatype in C is used to store the integer numbers (any number including positive, negative and zero without decimal part). Octal values, hexadecimal values, and decimal values can be stored in int data type in C.</p>
+             <ul>
+                 <li>Range:  -2,147,483,648 to 2,147,483,647</li>
+                 <li>Size: 4 bytes</li>
+                 <li>Format Specifier: %d</li>
+             </ul><br>
+              <h3>Character Data Type</h3>
+              <p>Character data type allows its variable to store only a single character. The size of the character is 1 byte. It is the most basic data type in C. It stores a single character and requires a single byte of memory in almost all compilers.</p>
+              <ul>
+                <li>Range: (-128 to 127) or (0 to 255)</li>
+                <li>Size: 1 byte</li>
+                <li>Format Specifier: %c</li>
+            </ul><br>
+              <h3>Float Data Type</h3>
+              <p>In C programming float data type is used to store floating-point values. Float in C is used to store decimal and exponential values. It is used to store decimal numbers (numbers with floating point values) with single precision.</p>
+              <ul>
+                <li>Range: 1.2E-38 to 3.4E+38</li>
+                <li>Size: 4 bytes</li>
+                <li>Format Specifier: %f</li>
+            </ul><br>
+            <h3>Double Data Type</h3>
+            <p>A Double data type in C is used to store decimal numbers (numbers with floating point values) with double precision. It is used to define numeric values which hold numbers with decimal values in C.</p>
+            <p>The double data type is basically a precision sort of data type that is capable of holding 64 bits of decimal numbers or floating points. Since double has more precision as compared to that float then it is much more obvious that it occupies twice the memory occupied by the floating-point type. It can easily accommodate about 16 to 17 digits after or before a decimal point.</p>
+            <ul>
+                <li>Range: 1.7E-308 to 1.7E+308</li>
+                <li>Size: 8 bytes</li>
+                <li>Format Specifier: %lf</li>
+            </ul><br>
+            <h3>Void Data Type</h3>
+            <p>The void data type in C is used to specify that no value is present. It does not provide a result value to its caller. It has no values and no operations. It is used to represent nothing. Void is used in multiple ways as function return type, function arguments as void, and pointers to void.</p>
+            
+
+        </section>
+    </main>
+    <footer>
+        <p>C Documentation Page &copy; Aswin raj, 2024</p>
+    </footer>
+</body>
+</html>

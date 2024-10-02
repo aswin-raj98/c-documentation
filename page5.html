@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="style.css">
+    <link type="image/png" rel="icon" href="./c.ico">
+</head>
+<body class="container">
+    <header>
+        <div class="logo">
+            <img src="./c.ico" alt="logo">
+        </div>
+        <h1>C TUTORIAL</h1>
+    </header>
+    <main>
+        <aside class="table">
+            <h2 class="contents">Contents</h2>
+            <ul class="menu">
+                <li class="sub-head"><a href="./index.html">Introduction</a></li> 
+                <ul class="sub-menu">
+                    <li><a href="#">What is C language?</a></li>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">C Basics</a></li>
+                </ul>
+                <li class="sub-head"><a href="./page2.html">Getting Started with C</a></li>
+                <ul class="sub-menu">
+                    <li><a href="#">C Variables and Constants</a></li>
+                    <li><a href="#">C Data Types</a></li>
+                </ul>
+                <li class="sub-head"><a href="./page3.html">Control Statements</a></li>
+                <ul class="sub-menu">
+                    <li><a href="#">C Input/Output</a></li>
+                    <li><a href="#">C Operators</a></li>
+                    <li><a href="#">C Functions</a></li>
+                </ul>
+                <li class="sub-head"><a href="./page4.html">Arrays and Strings</a></li>
+                <ul class="sub-menu">
+                    <li><a href="#">C Array</a></li>
+                    <li><a href="#">C Strings</a></li>
+                </ul>
+                <li class="sub-head"><a href="./page5.html">Memory Management</a></li>
+                <ul class="sub-menu">
+                    <li><a href="#">C Preprocessor</a></li>
+                    <li><a href="#">C File Handling</a></li>
+                </ul>
+            </ul>
+        </aside>
+        <section class="cnt">
+            <h1>Memory Management</h1><br>
+            <h2>C Preprocessors</h2>
+            <p>Preprocessors are programs that process the source code before compilation. Several steps are involved between writing a program and executing a program in C. Let us have a look at these steps before we actually start learning about Preprocessors.</p>
+            <img src="./structure16.jpg" alt=""><br><br>
+            <p>You can see the intermediate steps in the above diagram. The source code written by programmers is first stored in a file, let the name be “program.c“. This file is then processed by preprocessors and an expanded source code file is generated named “program.i”. This expanded file is compiled by the compiler and an object code file is generated named “program.obj”. Finally, the linker links this object code file to the object code of the library functions to generate the executable file “program.exe”. </p>
+            <h2>Preprocessor Directives in C</h2>
+            <p>Preprocessor programs provide preprocessor directives that tell the compiler to preprocess the source code before compiling. All of these preprocessor directives begin with a ‘#’ (hash) symbol. The ‘#’ symbol indicates that whatever statement starts with a ‘#’ will go to the preprocessor program to get executed. We can place these preprocessor directives anywhere in our program.</p>
+            <h3>Types of C Preprocessors</h3>
+            <ul>
+                <li>Macros</li>
+                <li>File Inclusion</li>
+                <li>Conditional Compilation</li>
+                <li>Other directives</li>
+            </ul><br>
+            <h3>Macros</h3>
+            <p>In C, Macros are pieces of code in a program that is given some name. Whenever this name is encountered by the compiler, the compiler replaces the name with the actual piece of code. The ‘#define’ directive is used to define a macro.</p>
+            <h3>File Inclusion</h3>
+            <p>This type of preprocessor directive tells the compiler to include a file in the source code program. The #include preprocessor directive is used to include the header files in the C program.</p>
+            <h3>Conditional Compilation</h3>
+            <p>Conditional Compilation in C directives is a type of directive that helps to compile a specific portion of the program or to skip the compilation of some specific part of the program based on some conditions.</p>
+            <h3>Other Directives </h3>
+            <p>Apart from the above directives, there are two more directives that are not commonly used.</p>
+            <ul>
+                <li>#undef Directive</li>
+                <li>#pragma Directive</li>
+            </ul><br><br>
+            <h2>File Handling in C</h2>
+            <p>File handling in C is the process in which we create, open, read, write, and close operations on a file. C language provides different functions such as fopen(), fwrite(), fread(), fseek(), fprintf(), etc. to perform input, output, and many different C file operations in our program.</p>
+            <h3>Why do we need File Handling in C?</h3>
+            <p>So far the operations using the C program are done on a prompt/terminal which is not stored anywhere. The output is deleted when the program is closed. But in the software industry, most programs are written to store the information fetched from the program.</p>
+            <ul>
+                <li>Reusability: The data stored in the file can be accessed, updated, and deleted anywhere and anytime providing high reusability.</li>
+                <li>Portability: Without losing any data, files can be transferred to another in the computer system. The risk of flawed coding is minimized with this feature.</li>
+                <li>Efficient: A large amount of input may be required for some programs. File handling allows you to easily access a part of a file using few instructions which saves a lot of time and reduces the chance of errors.</li>
+                <li>Storage Capacity: Files allow you to store a large amount of data without having to worry about storing everything simultaneously in a program.</li>
+            </ul><br>
+            <h3>Types of Files in C</h3>
+            <p>A file can be classified into two types based on the way the file stores the data. They are as follows:</p>
+            <ul>
+                <li>Text Files</li>
+                <li>Binary Files</li>
+            </ul><br>
+            <img src="./structure17.jpg" alt=""><br><br>
+            <h3>Text Files</h3>
+            <ul>
+                <li>Each line in a text file ends with a new line character (‘\n’).</li>
+                <li>It can be read or written by any text editor.</li>
+                <li>They are generally stored with .txt file extension.</li>
+                <li>Text files can also be used to store the source code.</li>
+            </ul><br>
+            <h3>Binary Files</h3>
+            <p>A binary file contains data in binary form (i.e. 0’s and 1’s) instead of ASCII characters. They contain data that is stored in a similar manner to how it is stored in the main memory.</p>
+            <ul>
+                <li>The binary files can be created only from within a program and their contents can only be read by a program.</li>
+                <li>More secure as they are not easily readable.</li>
+                <li>They are generally stored with .bin file extension.</li>
+            </ul><br>
+            <h2>C File Operations</h2>
+            <p>C file operations refer to the different possible operations that we can perform on a file in C such as:</p>
+             <ul>
+                 <li>Creating a new file – fopen() with attributes as “a” or “a+” or “w” or “w+”</li>
+                 <li>Opening an existing file – fopen()</li>
+                 <li>Reading from file – fscanf() or fgets()</li>
+                 <li>Writing to a file – fprintf() or fputs()</li>
+                 <li>Moving to a specific location in a file – fseek(), rewind()</li>
+                 <li>Closing a file – fclose()</li>
+             </ul><br>
+        </section>
+    </main>
+    <footer>
+        <p>C Documentation Page &copy; Aswin raj, 2024</p>
+    </footer>
+</body>
+</html>

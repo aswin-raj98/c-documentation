@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="style.css">
+    <link type="image/png" rel="icon" href="./c.ico">
+</head>
+<body class="container">
+    <header>
+        <div class="logo">
+            <img src="./c.ico" alt="logo">
+        </div>
+        <h1>C TUTORIAL</h1>
+    </header>
+    <main>
+        <aside class="table">
+            <h2 class="contents">Contents</h2>
+            <ul class="menu">
+                <li class="sub-head"><a href="./index.html">Introduction</a></li> 
+                <ul class="sub-menu">
+                    <li><a href="#">What is C language?</a></li>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">C Basics</a></li>
+                </ul>
+                <li class="sub-head"><a href="./page2.html">Getting Started with C</a></li>
+                <ul class="sub-menu">
+                    <li><a href="#">C Variables and Constants</a></li>
+                    <li><a href="#">C Data Types</a></li>
+                </ul>
+                <li class="sub-head"><a href="./page3.html">Control Statements</a></li>
+                <ul class="sub-menu">
+                    <li><a href="#">C Input/Output</a></li>
+                    <li><a href="#">C Operators</a></li>
+                    <li><a href="#">C Functions</a></li>
+                </ul>
+                <li class="sub-head"><a href="./page4.html">Arrays and Strings</a></li>
+                <ul class="sub-menu">
+                    <li><a href="#">C Array</a></li>
+                    <li><a href="#">C Strings</a></li>
+                </ul>
+                <li class="sub-head"><a href="./page5.html">Memory Management</a></li>
+                <ul class="sub-menu">
+                    <li><a href="#">C Preprocessor</a></li>
+                    <li><a href="#">C File Handling</a></li>
+                </ul>
+            </ul>
+        </aside>
+    <section class="cnt">
+        <h1>Arrays and Strings</h1><br>
+        <h2>C Arrays</h2>
+        <p>Array in C is one of the most used data structures in C programming. It is a simple and fast way of storing multiple values under a single name. In this article, we will study the different aspects of array in C language such as array declaration, definition, initialization, types of arrays, array syntax, advantages and disadvantages, and many more.</p>
+        <p>An array in C is a fixed-size collection of similar data items stored in contiguous memory locations. It can be used to store the collection of primitive data types such as int, char, float, etc., and also derived and user-defined data types such as pointers, structures, etc.</p>
+        <img src="./structure8.jpg" alt=""><br>
+        <h3>C Array Declaration</h3>
+        <p>In C, we have to declare the array like any other variable before using it. We can declare an array by specifying its name, the type of its elements, and the size of its dimensions. When we declare an array in C, the compiler allocates the memory block of the specified size to the array name.</p>
+        <h4>Syntax</h4>
+        <img src="./syntax11.jpg" alt=""><br><br>
+        <img src="./structure9.jpg" alt=""><br><br>
+        <h4>Example</h4>
+        <img src="./code20.jpg" alt=""><br>
+        <h2>C Array Initialization</h2>
+        <p>Initialization in C is the process to assign some initial value to the variable. When the array is declared or allocated memory, the elements of the array contain some garbage value. So, we need to initialize the array to some meaningful value. There are multiple ways in which we can initialize an array in C.</p>
+        <h3>Array Initialization with Declaration</h3>
+        <p>In this method, we initialize the array along with its declaration. We use an initializer list to initialize multiple elements of the array. An initializer list is the list of values enclosed within braces { } separated b a comma.</p>
+        <img src="./syntax12.jpg" alt=""><br><br>
+        <img src="./structure10.jpg" alt=""><br><br>
+        <h3>Array Initialization with Declaration without Size</h3>
+        <p>If we initialize an array using an initializer list, we can skip declaring the size of the array as the compiler can automatically deduce the size of the array in these cases. The size of the array in these cases is equal to the number of elements present in the initializer list as the compiler can automatically deduce the size of the array.</p>
+        <img src="./syntax13.jpg" alt=""><br><br>
+        <h3>Array Initialization after Declaration (Using Loops)</h3>
+        <p>We initialize the array after the declaration by assigning the initial value to each element individually. We can use for loop, while loop, or do-while loop to assign the value to each element of the array.</p>
+        <img src="./syntax14.jpg" alt=""><br><br>
+        <h4>Example</h4>
+        <img src="./code21.jpg" alt=""><br><br>
+        <h2>Access Array Elements</h2>
+        <p>We can access any element of an array in C using the array subscript operator [ ]  and the index value i of the element.</p>
+        <p><strong>array_name [index];</strong></p>
+        <p>One thing to note is that the indexing in the array always starts with 0, i.e., the first element is at index 0 and the last element is at N – 1 where N is the number of elements in the array.</p>
+        <img src="./structure11.jpg" alt=""><br><br>
+        <h4>Example</h4>
+        <img src="./code22.jpg" alt=""><br>
+        <h4>Output</h4>
+        <img src="./output20.jpg" alt=""><br><br>
+        <h2>Types of Array in C</h2>
+        <p>There are two types of arrays based on the number of dimensions it has. They are as follows:</p>
+        <ul>
+            <li>One Dimensional Arrays (1D Array)</li>
+            <li>Multidimensional Arrays</li>
+        </ul><br>
+        <h3>One Dimensional Array in C</h3>
+        <p>The One-dimensional arrays, also known as 1-D arrays in C are those arrays that have only one dimension.</p>
+        <p><strong>array_name [size];</strong></p>
+        <img src="./structure12.jpg" alt=""><br><br>
+        <h4>Example</h4>
+         <img src="./code23.jpg" alt=""><br>
+         <h4>Output</h4>
+         <img src="./output21.jpg" alt=""><br><br>
+         <h3>Multidimensional Array in C</h3>
+         <p>Multi-dimensional Arrays in C are those arrays that have more than one dimension. Some of the popular multidimensional arrays are 2D arrays and 3D arrays. We can declare arrays with more dimensions than 3d arrays but they are avoided as they get very complex and occupy a large amount of space.</p>
+         <h3>Two-Dimensional Array in C</h3>
+         <p>A Two-Dimensional array or 2D array in C is an array that has exactly two dimensions. They can be visualized in the form of rows and columns organized in a two-dimensional plane.</p>
+         <p><strong>array_name[size1] [size2];</strong></p>
+         <img src="./structure13.jpg" alt=""><br>
+         <h4>Example</h4>
+         <img src="./code24.jpg" alt=""><br>
+         <h4>Output</h4>
+         <img src="./output22.jpg" alt=""><br><br>
+         <h3>Three-Dimensional Array in C</h3>
+         <p>Another popular form of a multi-dimensional array is Three Dimensional Array or 3D Array. A 3D array has exactly three dimensions. It can be visualized as a collection of 2D arrays stacked on top of each other to create the third dimension.</p>
+         <p><strong>array_name [size1] [size2] [size3];</strong></p>
+         <img src="./structure14.jpg" alt=""><br>
+         <h4>Example</h4>
+         <img src="./code25.jpg" alt=""><br>
+         <h4>Output</h4>
+         <img src="./output23.jpg" alt=""><br><br>
+         <h2>Strings in C</h2>
+         <p>A String in C programming is a sequence of characters terminated with a null character ‘\0’. The C String is stored as an array of characters. The difference between a character array and a C string is that the string in C is terminated with a unique character ‘\0’.</p>
+         <img src="./structure15.jpg" alt=""><br>
+         <h3>C String Declaration Syntax</h3>
+         <p>Declaring a string in C is as simple as declaring a one-dimensional array. Below is the basic syntax for declaring a string.</p>
+         <p><strong>char string_name[size];</strong></p>
+         <p>In the above syntax string_name is any name given to the string variable and size is used to define the length of the string, i.e the number of characters strings will store</p>
+         <p>There is an extra terminating character which is the Null character (‘\0’) used to indicate the termination of a string that differs strings from normal character arrays.</p>
+         <h3>C String Initialization</h3>
+         <p>A string in C can be initialized in different ways. We will explain this with the help of an example.</p>
+         <ul>
+             <li>Assigning a String Literal without Size</li>
+             <li>Assigning a String Literal with a Predefined Size</li>
+             <li>Assigning Character by Character with Size</li>
+             <li>Assigning Character by Character without Size</li>
+         </ul><br>
+         <h4>C String Example</h4>
+         <img src="./code26.jpg" alt=""><br>
+         <h4>Output</h4>
+         <img src="./output24.jpg" alt=""><br><br>
+
+    </section>
+    </main>
+    <footer>
+        <p>C Documentation Page &copy; Aswin raj, 2024</p>
+    </footer>
+</body>
+</html>

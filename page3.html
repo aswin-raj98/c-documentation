@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="style.css">
+    <link type="image/png" rel="icon" href="./c.ico">
+</head>
+<body class="container">
+    <header>
+        <div class="logo">
+            <img src="./c.ico" alt="logo">
+        </div>
+        <h1>C TUTORIAL</h1>
+    </header>
+    <main>
+        <aside class="table">
+            <h2 class="contents">Contents</h2>
+            <ul class="menu">
+                <li class="sub-head"><a href="./index.html">Introduction</a></li> 
+                <ul class="sub-menu">
+                    <li><a href="#">What is C language?</a></li>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">C Basics</a></li>
+                </ul>
+                <li class="sub-head"><a href="./page2.html">Getting Started with C</a></li>
+                <ul class="sub-menu">
+                    <li><a href="#">C Variables and Constants</a></li>
+                    <li><a href="#">C Data Types</a></li>
+                </ul>
+                <li class="sub-head"><a href="./page3.html">Control Statements</a></li>
+                <ul class="sub-menu">
+                    <li><a href="#">C Input/Output</a></li>
+                    <li><a href="#">C Operators</a></li>
+                    <li><a href="#">C Functions</a></li>
+                </ul>
+                <li class="sub-head"><a href="./page4.html">Arrays and Strings</a></li>
+                <ul class="sub-menu">
+                    <li><a href="#">C Array</a></li>
+                    <li><a href="#">C Strings</a></li>
+                </ul>
+                <li class="sub-head"><a href="./page5.html">Memory Management</a></li>
+                <ul class="sub-menu">
+                    <li><a href="#">C Preprocessor</a></li>
+                    <li><a href="#">C File Handling</a></li>
+                </ul>
+            </ul>
+        </aside>
+    
+    <section class="cnt">
+        <h1>Control Statements</h1><br>
+        <h2>Basic Input and Output in C</h2>
+            <p>C language has standard libraries that allow input and output in a program. The stdio.h or standard input output library in C that has methods for input and output.</p>
+            <h3>scanf()</h3>
+            <p>The scanf() method, in C, reads the value from the console as per the type specified and store it in the given address.</p>
+            <h4>Syntax</h4>
+            <img src="./syntax6.jpg" alt=""><br><br>
+            <h3>printf()</h3>
+            <p>The printf() method, in C, prints the value passed as the parameter to it, on the console screen.</p>
+            <h4>Syntax</h4>
+            <img src="./syntax7.jpg" alt="sy7"><br><br>
+            <h2>Operators in C</h2>
+            <p>In C language, operators are symbols that represent operations to be performed on one or more operands. They are the basic components of the C programming. In this article, we will learn about all the built-in operators in C with examples.</p>
+            <p>An operator in C can be defined as the symbol that helps us to perform some specific mathematical, relational, bitwise, conditional, or logical computations on values and variables. The values and variables used with operators are called operands. So we can say that the operators are the symbols that perform operations on operands.</p>
+            <img src="./structure4.jpg" alt="s4"><br><br>
+            <h2>Types of Operators in C</h2>
+            <p>C language provides a wide range of operators that can be classified into 6 types based on their functionality:</p>
+            <ul>
+                <li>Arithmetic Operators</li>
+                <li>Relational Operators</li>
+                <li>Logical Operators</li>
+                <li>Bitwise Operators</li>
+                <li>Assignment Operators</li>
+                <li>Other Operators</li>
+            </ul><br>
+            <h3>Arithmetic Operators</h3>
+            <p>The arithmetic operators are used to perform arithmetic/mathematical operations on operands.</p>
+            <h4>Example</h4>
+            <img src="./code11.jpg" alt="c11"><br>
+            <h4>Output</h4>
+            <img src="./output10.jpg" alt="s10"><br><br>
+            <h3>Relational Operators in C</h3>
+            <p>The relational operators in C are used for the comparison of the two operands. All these operators are binary operators that return true or false values as the result of comparison.</p>
+            <h4>Example</h4>
+            <img src="./code12.jpg" alt="c12"><br>
+            <h4>Output</h4>
+            <img src="./output11.jpg" alt="o12"><br><br>
+            <p>Here, 0 means false and 1 means true.</p>
+            <h3>Logical Operator in C</h3>
+            <p>Logical Operators are used to combine two or more conditions/constraints or to complement the evaluation of the original condition in consideration. The result of the operation of a logical operator is a Boolean value either true or false.</p>
+            <h4>Example</h4>
+            <img src="./code13.jpg" alt="c13"><br>
+            <h4>Output</h4>
+            <img src="./output13.jpg" alt=""><br><br>
+            <h3>Bitwise Operators in C</h3>
+            <p>The Bitwise operators are used to perform bit-level operations on the operands. The operators are first converted to bit-level and then the calculation is performed on the operands. Mathematical operations such as addition, subtraction, multiplication, etc. can be performed at the bit level for faster processing.</p>
+            <h4>Example</h4>
+            <img src="./code14.jpg" alt=""><br>
+            <h4>Output</h4>
+            <img src="./output14.jpg" alt=""><br><br>
+            <h3>Assignment Operators in C</h3>
+            <p>Assignment operators are used to assign value to a variable. The left side operand of the assignment operator is a variable and the right side operand of the assignment operator is a value. The value on the right side must be of the same data type as the variable on the left side otherwise the compiler will raise an error.</p>
+            <p>The assignment operators can be combined with some other operators in C to provide multiple operations using single operator. These operators are called compound operators.</p>
+            <h4>Example</h4>
+            <img src="./code15.jpg" alt=""><br>
+            <h4>Output</h4>
+            <img src="./output15.jpg" alt=""><br><br>
+            <h3>Other Operators</h3>
+            <p>Apart from the above operators, there are some other operators available in C used to perform some specific tasks. Some of them are discussed here: </p>
+            <ul>
+                <li>sizeof Operator</li>
+                <li>Comma Operator ( , )</li>
+                <li>Conditional Operator ( ? : )</li>
+                <li>dot (.) and arrow (->) Operators</li>
+                <li>Cast Operator</li>
+                <li>addressof (&) and Dereference (*) Operators</li>
+            </ul><br>
+            <h4>Example</h4>
+            <img src="./code16.jpg" alt=""><br>
+            <h4>Output</h4>
+            <img src="./output16.jpg" alt=""><br><br>
+            <h2>C Functions</h2>
+            <p>A function in C is a set of statements that when called perform some specific task. It is the basic building block of a C program that provides modularity and code reusability. The programming statements of a function are enclosed within { } braces, having certain meanings and performing certain operations. They are also called subroutines or procedures in other languages.</p>
+            <p>In this article, we will learn about functions, function definition. declaration, arguments and parameters, return values, and many more.</p>
+            <h3>Syntax of Functions in C</h3>
+            <p>The syntax of function can be divided into 3 aspects:</p>
+            <ul>
+                <li>Function Declaration</li>
+                <li>Function Definition</li>
+                <li>Function Calls</li>
+            </ul><br>
+            <h3>Function Declarations</h3>
+            <p>In a function declaration, we must provide the function name, its return type, and the number and type of its parameters. A function declaration tells the compiler that there is a function with the given name defined somewhere else in the program.</p>
+            <h4>Syntax</h4>
+            <img src="./syntax8.jpg" alt=""><br>
+            <p>The parameter name is not mandatory while declaring functions. We can also declare the function without using the name of the data variables.</p>
+            <h4>Example</h4>
+            <img src="./syntax9.jpg" alt=""><br><br>
+            <img src="./structure5.jpg" alt=""><br><br>
+            <h3>Function Definition</h3>
+            <p>The function definition consists of actual statements which are executed when the function is called (i.e. when the program control comes to the function).</p>
+            <p>A C function is generally defined and declared in a single step because the function definition always starts with the function declaration so we do not need to declare it explicitly. The below example serves as both a function definition and a declaration.</p>
+            <h4>Syntax</h4>
+            <img src="./syntax10.jpg" alt=""><br><br>
+            <img src="./structure6.jpg" alt=""><br><br>
+            <h3>Function Call</h3>
+            <p>A function call is a statement that instructs the compiler to execute the function. We use the function name and parameters in the function call.</p>
+            <p>In the below example, the first sum function is called and 10,30 are passed to the sum function. After the function call sum of a and b is returned and control is also returned back to the main function of the program.</p>
+            <img src="./structure7.jpg" alt=""><br><br>
+            <h4>Example</h4>
+            <img src="./code17.jpg" alt=""><br>
+            <h4>Output</h4>
+            <img src="./output17.jpg" alt=""><br><br>
+            <h2>Types of Function</h2>
+            <ul>
+                <li>Library Functions</li>
+                <li>User Defined Functions</li>
+            </ul><br>
+            <h3>Library Function</h3>
+            <p>A library function is also referred to as a “built-in function”. A compiler package already exists that contains these functions, each of which has a specific meaning and is included in the package. Built-in functions have the advantage of being directly usable without being defined, whereas user-defined functions must be declared and defined before being used. </p>
+            <h4>Example</h4>
+            <img src="./code18.jpg" alt=""><br>
+            <h4>Output</h4>
+            <img src="./output18.jpg" alt=""><br><br>
+            <h3>User Defined Functions</h3>
+            <p>Functions that the programmer creates are known as User-Defined functions or “tailor-made functions”. User-defined functions can be improved and modified according to the need of the programmer. Whenever we write a function that is case-specific and is not defined in any header file, we need to declare and define our own functions according to the syntax.</p>
+            <h4>Example</h4>
+            <img src="./code19.jpg" alt=""><br>
+            <h4>Output</h4>
+            <img src="./output19.jpg" alt=""><br><br>
+            <h2>Advantages of Functions in C</h2>
+            <ul>
+                <li>The function can reduce the repetition of the same statements in the program.</li>
+                <li>The function makes code readable by providing modularity to our program.</li>
+                <li>There is no fixed number of calling functions it can be called as many times as you want.</li>
+                <li>The function reduces the size of the program.</li>
+                <li>Once the function is declared you can just use it without thinking about the internal working of the function.</li>
+            </ul><br>
+            <h2>Disadvantages of Functions in C</h2>
+            <ul>
+                <li>Cannot return multiple values.</li>
+                <li>Memory and time overhead due to stack frame allocation and transfer of program control.</li>
+            </ul><br>
+
+    </section>
+</main>
+    <footer>
+        <p>C Documentation Page &copy; Aswin raj, 2024</p>
+    </footer>
+</body>
+</html>
